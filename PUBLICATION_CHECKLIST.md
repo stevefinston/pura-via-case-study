@@ -1,7 +1,8 @@
 # Pura Via publication checklist
 
-This artifact is approved for publication as a public GitHub source repository.
-The interactive website remains local-only until its separate release gates pass.
+This artifact is approved for publication as a public GitHub source repository
+and for a Vercel-hosted public website. The release gates below still require
+verification against the final production origin.
 
 ## Claims and privacy
 
@@ -68,5 +69,5 @@ The interactive website remains local-only until its separate release gates pass
 - [ ] Deployment succeeds at the approved destination
 - [ ] Live desktop and mobile visual QA passes after deployment
 
-No website deployment, metadata-indexing change, or public-account change beyond
-the approved GitHub source publication is authorized by this checklist.
+The owner authorized a Vercel deployment and its required public metadata changes
+on 2026-08-26. No other public-account or product-maturity change is authorized.

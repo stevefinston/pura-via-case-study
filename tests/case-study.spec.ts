@@ -47,12 +47,21 @@ test('exposes working navigation, details, and public-safe links', async ({ page
   await expect(github).toHaveAttribute('href', 'https://github.com/stevefinston');
 });
 
-test('publishes correct local-review metadata and social asset', async ({ page, request }) => {
+test('publishes environment-appropriate metadata and social assets', async ({ page, request }) => {
+  const expectedOrigin = (process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '');
+  const expectsIndexing = process.env.EXPECT_INDEX === 'true';
+
   await expect(page).toHaveTitle('Pura Via — Technical Product Case Study');
   await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /validation-stage coordination prototype/);
   await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', 'Pura Via — Technical Product Case Study');
-  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'http://localhost:3000/og.png');
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', `${expectedOrigin}/og.png`);
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    'content',
+    expectsIndexing ? /^index/ : /noindex/,
+  );
+  if (expectsIndexing) {
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `${expectedOrigin}/`);
+  }
   await expect(page.locator('.brand-icon')).toBeVisible();
 
   const image = await request.get('/og.png');
