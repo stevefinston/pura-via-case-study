@@ -1,5 +1,7 @@
 # Pura Via — technical product case study
 
+[![Verify case study](https://github.com/stevefinston/pura-via-case-study/actions/workflows/ci.yml/badge.svg)](https://github.com/stevefinston/pura-via-case-study/actions/workflows/ci.yml)
+
 An evidence-led case study of how I translated a validation-stage shared
 water-transport concept into explicit stakeholders, departure states, trust
 boundaries, and working interactive prototypes.
