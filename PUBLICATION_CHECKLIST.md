@@ -29,14 +29,14 @@ The interactive website remains local-only until its separate release gates pass
 
 ## Responsive and accessibility QA
 
-- [x] Final desktop browser QA passed
-- [x] Final mobile browser QA passed
-- [x] Navigation and links passed
-- [x] Keyboard focus passed
-- [x] Automated accessibility and contrast scan passed
-- [x] No horizontal overflow at checked viewports
-- [x] Reduced-motion behavior passed
-- [x] Desktop and mobile screenshots visually inspected
+- [ ] Final desktop browser QA passed for the Pacific Editorial redesign
+- [ ] Final mobile browser QA passed for the Pacific Editorial redesign
+- [x] Navigation and links rechecked after the redesign
+- [x] Keyboard focus rechecked after the redesign
+- [x] Automated accessibility and contrast scan rerun after the redesign
+- [x] No horizontal overflow at checked viewports after the redesign
+- [x] Reduced-motion behavior remains implemented
+- [ ] Updated desktop and mobile screenshots visually inspected
 
 ## Metadata and assets
 
@@ -62,7 +62,7 @@ The interactive website remains local-only until its separate release gates pass
 
 ## Release gates
 
-- [ ] Owner reviews the complete local page and claim qualifications
+- [x] Owner reviewed and approved the complete local case study on 2026-08-26
 - [x] Owner approved public GitHub source publication
 - [ ] Final public-origin link and metadata check passes
 - [ ] Deployment succeeds at the approved destination

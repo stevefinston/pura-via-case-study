@@ -1,5 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
+import { createHash } from 'node:crypto';
 
 test.beforeEach(async ({ page }) => {
   const consoleErrors: string[] = [];
@@ -52,10 +53,22 @@ test('publishes correct local-review metadata and social asset', async ({ page, 
   await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', 'Pura Via — Technical Product Case Study');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'http://localhost:3000/og.png');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+  await expect(page.locator('.brand-icon')).toBeVisible();
 
   const image = await request.get('/og.png');
   expect(image.ok()).toBeTruthy();
   expect(image.headers()['content-type']).toContain('image/png');
+
+  const ocean = await request.get('/pacific-editorial-hero.jpg');
+  expect(ocean.ok()).toBeTruthy();
+  expect(ocean.headers()['content-type']).toContain('image/jpeg');
+
+  const brandIcon = await request.get('/pura-via-icon.png');
+  expect(brandIcon.ok()).toBeTruthy();
+  expect(brandIcon.headers()['content-type']).toContain('image/png');
+  expect(createHash('sha256').update(await brandIcon.body()).digest('hex')).toBe(
+    'ecb3e9961a5af5913d6bebfe889adbbbd280dd6589a2a5e9564871050a5a136a',
+  );
 });
 
 test('supports keyboard focus and reduced motion', async ({ page }, testInfo) => {

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const evidenceItems = [
   { tone: "implemented", label: "Implemented", text: "Interactive guest + operator prototypes" },
   { tone: "verified", label: "Verified", text: "Build, runtime integrity, and packaging checks" },
@@ -23,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Pura Via case study home"><span className="brand-mark" aria-hidden="true">PV</span><span>Pura Via</span></a>
+        <a className="brand" href="#top" aria-label="Pura Via case study home"><Image className="brand-icon" src="/pura-via-icon.png" alt="" aria-hidden="true" width={42} height={42} priority /><span>Pura Via</span></a>
         <nav aria-label="Case study sections"><a href="#strategy">Strategy</a><a href="#experience">Experience</a><a href="#architecture">Architecture</a><a href="#evidence">Evidence</a></nav>
       </header>
 
@@ -132,7 +134,7 @@ export default function Home() {
 
       <section className="section demonstration-section"><div><p className="eyebrow">What this project demonstrates</p><h2>Product judgment under operational uncertainty.</h2></div><div className="demonstration-copy"><p>I translated an ambiguous logistics idea into explicit stakeholders, states, trust boundaries, and testable interfaces—while keeping implementation claims separate from business hypotheses.</p><ul><li>Narrowing scope around the riskiest assumptions</li><li>Designing for competing stakeholder needs</li><li>Building interactive flows with honest system boundaries</li><li>Using verification evidence without overstating maturity</li></ul></div></section>
 
-      <footer className="site-footer"><div><span className="footer-mark" aria-hidden="true">PV</span><div><strong>Pura Via</strong><p>A technical product case study by Steven Finston, independent developer.</p></div></div><div className="footer-links"><a href="https://github.com/stevefinston" rel="noreferrer">More work on GitHub</a><a href="#top">Back to top ↑</a></div><p className="footer-disclaimer">Validation-stage concept. No transportation service, partnership, hotel affiliation, or live pilot is represented.</p></footer>
+      <footer className="site-footer"><div><Image className="footer-icon" src="/pura-via-icon.png" alt="" aria-hidden="true" width={46} height={46} /><div><strong>Pura Via</strong><p>A technical product case study by Steven Finston, independent developer.</p></div></div><div className="footer-links"><a href="https://github.com/stevefinston" rel="noreferrer">More work on GitHub</a><a href="#top">Back to top ↑</a></div><p className="footer-disclaimer">Validation-stage concept. No transportation service, partnership, hotel affiliation, or live pilot is represented.</p></footer>
     </main>
   );
 }

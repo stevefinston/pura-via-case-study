@@ -12,6 +12,7 @@
 /coverage
 /playwright-report/
 /test-results/
+/qa/palette-audit/
 
 # next.js
 /.next/
