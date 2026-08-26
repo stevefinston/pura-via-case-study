@@ -86,7 +86,9 @@ npm audit --audit-level=high
 ```
 
 See [docs/UPDATING.md](docs/UPDATING.md) for the content map, evidence rules, and
-release boundaries.
+release boundaries. Copy the maintained title, description, and link from
+[docs/LINKEDIN_FEATURED.md](docs/LINKEDIN_FEATURED.md) when adding the project to
+LinkedIn Featured.
 
 ## Repository map
 
