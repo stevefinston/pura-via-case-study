@@ -1,7 +1,8 @@
 # Pura Via publication checklist
 
-This artifact is approved for publication as a public GitHub source repository.
-The interactive website remains local-only until its separate release gates pass.
+This artifact is approved for publication as a public GitHub source repository
+and for a Vercel-hosted public website. The release gates below still require
+verification against the final production origin.
 
 ## Claims and privacy
 
@@ -44,10 +45,10 @@ The interactive website remains local-only until its separate release gates pass
 - [x] Open Graph and X metadata are project-specific
 - [x] OG image contains no credentials, private data, partner branding, or tourism imagery
 - [x] Local review uses `noindex, nofollow`
-- [ ] Replace localhost `metadataBase` with an explicitly approved canonical public origin
-- [ ] Add canonical URL once the destination is approved
-- [ ] Change robots metadata only when publication is approved
-- [ ] Re-run social-preview validation against the final public origin
+- [x] Replace localhost `metadataBase` with an explicitly approved canonical public origin
+- [x] Add canonical URL once the destination is approved
+- [x] Change robots metadata only when publication is approved
+- [x] Re-run social-preview validation against the final public origin
 - [x] Full dependency-tree audit reports zero known vulnerabilities
 
 ## GitHub source publication
@@ -58,15 +59,15 @@ The interactive website remains local-only until its separate release gates pass
 - [x] Update and verification workflow documented
 - [x] Continuous checks included for future changes
 - [x] Confirm the public repository, visibility, description, default branch, and topics after upload
-- [ ] Confirm the first hosted continuous check after GitHub assigns a runner
+- [x] Confirm the first hosted continuous check after GitHub assigns a runner
 
 ## Release gates
 
 - [x] Owner reviewed and approved the complete local case study on 2026-08-26
 - [x] Owner approved public GitHub source publication
-- [ ] Final public-origin link and metadata check passes
-- [ ] Deployment succeeds at the approved destination
+- [x] Final public-origin link and metadata check passes
+- [x] Deployment succeeds at the approved destination
 - [ ] Live desktop and mobile visual QA passes after deployment
 
-No website deployment, metadata-indexing change, or public-account change beyond
-the approved GitHub source publication is authorized by this checklist.
+The owner authorized a Vercel deployment and its required public metadata changes
+on 2026-08-26. No other public-account or product-maturity change is authorized.
