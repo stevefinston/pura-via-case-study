@@ -70,3 +70,34 @@ Current fidelity status:
 - Copy: unchanged.
 
 final result: blocked
+
+## Operator filtering copy clarification — PR #3
+
+- Source truth: owner-supplied 2052 × 1048 screenshot of the operator-dispatch
+  section, showing the sentence “Only runs matching a mock verified vessel
+  profile appear.”
+- Copy finding: the sentence mixed an internal prototype qualifier (“mock”)
+  with a user-facing trust claim (“verified”), making the filtering behavior
+  difficult to understand.
+- Fix: replaced it with “Only runs that fit an operator's availability and
+  vessel capabilities are shown.” The separate synthetic-interface disclosure
+  remains in place, and the surrounding layout, typography, colors, imagery,
+  bullets, and operator-neutral language are unchanged.
+- Automated evidence: the 10-test desktop/mobile suite passes, including
+  accessibility, contrast, overflow, console, and explicit copy assertions.
+- Visual evidence blocker: the approved in-app browser still cannot access the
+  localhost implementation because its admin-enforced security check is
+  unavailable, and no external browser is connected. The source and revised
+  implementation therefore cannot be placed into the required same-input
+  browser comparison.
+
+Current fidelity status:
+
+- Typography: unchanged; the replacement remains a two-sentence paragraph.
+- Spacing and layout: unchanged in code and covered by the no-overflow tests.
+- Colors and tokens: unchanged.
+- Image quality and assets: unchanged.
+- Copy: clarified and protected by a regression assertion; the confusing
+  phrase is asserted absent.
+
+final result: blocked

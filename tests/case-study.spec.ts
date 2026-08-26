@@ -16,6 +16,8 @@ test('renders the complete evidence-led case study without overflow', async ({ p
   await expect(page.getByRole('heading', { name: 'Coordinating the trip without pretending to operate it.' })).toBeVisible();
   await expect(page.getByText('Validation-stage concept. No transportation service, partnership, hotel affiliation, or live pilot is represented.')).toBeVisible();
   await expect(page.getByText('Evidence before adjectives.')).toBeVisible();
+  await expect(page.getByText(/Only runs that fit an operator's availability and vessel capabilities are shown/)).toBeVisible();
+  await expect(page.getByText(/mock verified vessel profile/)).toHaveCount(0);
 
   const sizes = await page.evaluate(() => ({
     scrollWidth: document.documentElement.scrollWidth,
