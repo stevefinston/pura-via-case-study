@@ -10,6 +10,14 @@ and unpublished operating details out of this repository.
 - Edit the responsive visual system in `app/globals.css`.
 - Edit title, description, and social metadata in `app/layout.tsx`.
 - Replace `public/og.png` when the positioning or visual identity changes.
+- Keep the Pacific Editorial identity rooted in a shell-white hero, a vivid
+  cobalt ocean field, deep marine typography, aqua details, coral actions, and
+  sand-colored evidence surfaces. The editable tokens are at the top of
+  `app/globals.css`.
+- Keep `public/pacific-editorial-hero.jpg`, `public/pura-via-icon.png`, the hero
+  treatment, and `public/og.png` visually aligned. The canonical icon comes
+  from `assets/logos/pura-via-icon.png` on the private Pura Via repository's
+  `brand/pura-via-icon` branch; preserve its exact bytes and do not recolor it.
 - Update `EVIDENCE.md` whenever a public claim changes.
 - Update `PUBLICATION_CHECKLIST.md` when a release gate changes state.
 
