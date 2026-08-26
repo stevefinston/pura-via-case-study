@@ -57,7 +57,8 @@ The interactive website remains local-only until its separate release gates pass
 - [x] Private Pura Via working repository remains separate and unchanged
 - [x] Update and verification workflow documented
 - [x] Continuous checks included for future changes
-- [ ] Confirm the public repository and its first continuous check after upload
+- [x] Confirm the public repository, visibility, description, default branch, and topics after upload
+- [ ] Confirm the first hosted continuous check after GitHub assigns a runner
 
 ## Release gates
 
