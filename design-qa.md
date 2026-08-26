@@ -16,6 +16,9 @@
 - Verified the local page, hero asset, social image, and icon return successful
   HTTP responses with the expected content types.
 - Lint, production build, dependency audit, and whitespace checks pass.
+- GitHub Actions run `32991420895` passed the complete 10-test desktop/mobile
+  Playwright suite, automated accessibility and contrast scan, lint, production
+  build, and dependency audit on commit `c0a5d4ba2288c5fd1c89a277178c12bedc8ac79e`.
 
 ## Blocking check
 

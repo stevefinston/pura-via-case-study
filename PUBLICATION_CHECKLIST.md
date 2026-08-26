@@ -31,10 +31,10 @@ The interactive website remains local-only until its separate release gates pass
 
 - [ ] Final desktop browser QA passed for the Pacific Editorial redesign
 - [ ] Final mobile browser QA passed for the Pacific Editorial redesign
-- [ ] Navigation and links rechecked after the redesign
-- [ ] Keyboard focus rechecked after the redesign
-- [ ] Automated accessibility and contrast scan rerun after the redesign
-- [ ] No horizontal overflow at checked viewports after the redesign
+- [x] Navigation and links rechecked after the redesign
+- [x] Keyboard focus rechecked after the redesign
+- [x] Automated accessibility and contrast scan rerun after the redesign
+- [x] No horizontal overflow at checked viewports after the redesign
 - [x] Reduced-motion behavior remains implemented
 - [ ] Updated desktop and mobile screenshots visually inspected
 
