@@ -78,6 +78,9 @@ test('publishes environment-appropriate metadata and social assets', async ({ pa
   expect(createHash('sha256').update(await brandIcon.body()).digest('hex')).toBe(
     'ecb3e9961a5af5913d6bebfe889adbbbd280dd6589a2a5e9564871050a5a136a',
   );
+  await expect(page.locator('.coordination-icon')).toBeVisible();
+  await expect(page.locator('.coordination-icon')).toHaveAttribute('src', /pura-via-icon\.png/);
+  await expect(page.locator('.pv-monogram')).toHaveCount(0);
 });
 
 test('supports keyboard focus and reduced motion', async ({ page }, testInfo) => {

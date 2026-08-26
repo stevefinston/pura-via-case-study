@@ -78,7 +78,7 @@ export default function Home() {
         <div className="system-map" aria-label="Pura Via system relationship map">
           <div className="actor-card"><span>Demand side</span><strong>Guest</strong><p>Discovers a departure and reserves seats.</p></div>
           <div className="actor-card"><span>Trust channel</span><strong>Concierge</strong><p>Explains the scenario and supports the guest.</p></div>
-          <div className="coordination-plane"><span className="pv-monogram" aria-hidden="true">PV</span><div><strong>Pura Via</strong><p>Demand aggregation · reservation state · schedules · communication · dispatch coordination</p></div></div>
+          <div className="coordination-plane"><Image className="coordination-icon" src="/pura-via-icon.png" alt="" aria-hidden="true" width={56} height={56} sizes="56px" /><div><strong>Pura Via</strong><p>Demand aggregation · reservation state · schedules · communication · dispatch coordination</p></div></div>
           <div className="actor-card operator-actor"><span>Execution side</span><strong>Licensed operator</strong><p>Owns the boat, crew, safety, permits, insurance, and maritime execution.</p></div>
         </div>
         <div className="boundary-grid">
