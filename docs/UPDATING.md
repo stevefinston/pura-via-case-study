@@ -1,0 +1,55 @@
+# Updating the Pura Via case study
+
+This repository is the public presentation layer, not the private Pura Via
+working repository. Keep source research, private notes, contacts, credentials,
+and unpublished operating details out of this repository.
+
+## Content map
+
+- Edit the narrative and synthetic interface content in `app/page.tsx`.
+- Edit the responsive visual system in `app/globals.css`.
+- Edit title, description, and social metadata in `app/layout.tsx`.
+- Replace `public/og.png` when the positioning or visual identity changes.
+- Update `EVIDENCE.md` whenever a public claim changes.
+- Update `PUBLICATION_CHECKLIST.md` when a release gate changes state.
+
+## Evidence rules
+
+Keep every consequential claim in one of these categories: hypothesis,
+directional research, documented decision, implemented prototype, automated
+check, visual inspection, or not evidenced. Never turn prototype behavior into
+a claim about real customers, partners, bookings, revenue, approvals, a pilot,
+or measurable outcomes without new evidence.
+
+Use only synthetic, date-neutral records in screenshots and interface diagrams.
+Keep guest and concierge information separate from private operator offers and
+selection details. Show individual synthetic run payouts only; do not publish an
+aggregate posted-value metric.
+
+## Local workflow
+
+```bash
+npm ci
+npm run dev
+```
+
+The local site opens on the address printed by the development server. Before
+committing a change, run:
+
+```bash
+npm run lint
+npm run build
+npm run test:qa
+npm audit --audit-level=high
+```
+
+Browser screenshots from the automated checks are written to
+`test-results/visuals/` and are intentionally ignored. Promote a screenshot into
+`qa/` only after visually reviewing it and deciding it should be durable evidence.
+
+## Release boundary
+
+Pushing source changes to this public repository does not authorize hosting the
+website. A hosted release requires an approved canonical origin, updated metadata
+and robots settings, social-preview validation, successful deployment, and live
+desktop and mobile review.
