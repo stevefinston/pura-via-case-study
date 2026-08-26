@@ -57,7 +57,10 @@ Browser screenshots from the automated checks are written to
 
 ## Release boundary
 
-Pushing source changes to this public repository does not authorize hosting the
-website. A hosted release requires an approved canonical origin, updated metadata
-and robots settings, social-preview validation, successful deployment, and live
-desktop and mobile review.
+The public origin is https://pura-via-case-study.vercel.app. Vercel is connected
+to this GitHub repository so an approved change merged to `main` can produce a
+new production deployment. Use a feature branch and pull request, wait for the
+full GitHub verification job, inspect the Vercel preview, and merge only the
+approved exact version. After deployment, recheck the canonical URL, robots
+metadata, social image, desktop and mobile layouts, and the Vercel deployment
+status before describing the update as published.

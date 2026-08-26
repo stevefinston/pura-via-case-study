@@ -6,6 +6,8 @@ An evidence-led case study of how I translated a validation-stage shared
 water-transport concept into explicit stakeholders, departure states, trust
 boundaries, and working interactive prototypes.
 
+**[View the published case study](https://pura-via-case-study.vercel.app)**
+
 ![Pura Via case-study introduction](qa/desktop-first.png)
 
 ## What this demonstrates
@@ -46,9 +48,9 @@ real-world operations.
 - Automated accessibility checks with Axe
 - GitHub Actions for lint, build, browser QA, and dependency audit
 
-The presentation site itself is intentionally configured for local review with
-`noindex` metadata. Publishing a hosted website is a separate release decision;
-the source repository is the shareable artifact today.
+The production presentation is published on Vercel with indexable canonical and
+social metadata. Local and preview environments remain `noindex`; this public
+repository remains the canonical source for updates.
 
 ## Evidence and verification
 

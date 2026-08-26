@@ -16,7 +16,11 @@ React and TypeScript.
 
 ## Link
 
-https://github.com/stevefinston/pura-via-case-study
+https://pura-via-case-study.vercel.app
+
+Use the hosted case study as the primary Featured link. Keep the public source
+repository available at https://github.com/stevefinston/pura-via-case-study for
+technical reviewers who want to inspect the implementation and evidence record.
 
 ## Update rule
 
