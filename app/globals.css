@@ -148,7 +148,7 @@ a { color: inherit; }
 .actor-card > strong { margin-top: 25px; font-family: Georgia, serif; font-size: 23px; font-weight: 400; }
 .actor-card p, .coordination-plane p { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .coordination-plane { display: grid; grid-template-columns: auto 1fr; gap: 18px; border-color: var(--papaya); background: var(--charcoal-900); color: white; }
-.pv-monogram { display: grid; width: 48px; height: 48px; place-items: center; border: 1px solid var(--copper); border-radius: 50%; color: #8be0e2; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+.coordination-icon { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; box-shadow: 0 0 0 1px rgb(139 224 226 / 28%); }
 .coordination-plane strong { font-family: Georgia, serif; font-size: 24px; font-weight: 400; }
 .coordination-plane p { color: #c3d5df; }
 .operator-actor { border-color: #81cbd0; }
