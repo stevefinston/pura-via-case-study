@@ -90,6 +90,10 @@ export default function Home() {
 
       <section className="section experience-section" id="experience">
         <div className="section-intro"><p className="eyebrow">04 · Two surfaces, one shared state</p><h2>Show each stakeholder only what helps them act.</h2></div>
+        <div className="prototype-callout">
+          <div><span className="surface-label">Interactive prototype</span><strong>Explore the guest and private operator flows.</strong><p>Synthetic demonstration only—no payments, reservations, or real dispatch.</p></div>
+          <a className="button button-primary" href="https://pura-via-prototype.vercel.app" target="_blank" rel="noreferrer">Launch interactive prototype ↗</a>
+        </div>
         <div className="experience-grid">
           <article className="experience-card guest-card">
             <div className="experience-copy"><span className="surface-label">Guest + concierge</span><h3>Make conditional service understandable.</h3><p>Choose a departure, adjust party size, see confirmation progress, hold seats, and reach concierge support. Operator identities and offer mechanics stay out of view.</p><ul><li>Departure selection and sorting</li><li>Party-size controls and threshold progress</li><li>Demo-only seat hold with no payment</li><li>Concierge and licensed-partner trust language</li></ul></div>

@@ -47,6 +47,11 @@ test('exposes working navigation, details, and public-safe links', async ({ page
 
   const github = page.getByRole('link', { name: 'More work on GitHub' });
   await expect(github).toHaveAttribute('href', 'https://github.com/stevefinston');
+
+  const prototype = page.getByRole('link', { name: 'Launch interactive prototype ↗' });
+  await expect(prototype).toHaveAttribute('href', 'https://pura-via-prototype.vercel.app');
+  await expect(prototype).toHaveAttribute('target', '_blank');
+  await expect(page.getByText('Synthetic demonstration only—no payments, reservations, or real dispatch.')).toBeVisible();
 });
 
 test('publishes environment-appropriate metadata and social assets', async ({ page, request }) => {
