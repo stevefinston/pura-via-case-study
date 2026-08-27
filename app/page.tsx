@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       <section className="section strategy-section" id="strategy">
-        <div className="section-intro inverse"><p className="eyebrow">02 · Product strategy</p><h2>Solve density before scale.</h2><p>A broad marketplace would split limited demand across routes and times. The first wedge does the opposite: one concentrated corridor, a small schedule, per-seat reservations, and an explicit confirmation threshold.</p></div>
+        <div className="section-intro inverse"><p className="eyebrow">02 · Product strategy</p><h2>Solve density before scale.</h2><p>A marketplace spanning many routes and departure times would spread early demand too thin. Pura Via starts with one corridor and a limited schedule, combining per-seat reservations until enough passengers commit to confirm a trip.</p></div>
         <div className="threshold-model">
           <div className="threshold-copy"><span className="model-number">04 / 05</span><strong>interested seats</strong><p>A run remains pending until its operating condition is met.</p></div>
           <div className="seat-model" role="img" aria-label="Four held seats and one open seat">{[0, 1, 2, 3, 4].map((seat) => <span key={seat} className={seat === 4 ? "open-seat" : "held-seat"} aria-hidden="true" />)}</div>
